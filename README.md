@@ -6,6 +6,10 @@ In this repository I will be adding some short Javascript exercices to keep prac
 
 Simple exercise to practice looping over items.
 
+## Excuse generator
+
+Absurd excuse generator to get you off all your responsibilities. Worked mainly on abstracting the functions so they would be easier to update if I want to add more elements to my arrays. So went for a function, `getRandom` that then generates the random element inside the `getExcuse` function thanks to a loop. Quite stupid and easy, but also insanely entertaining.
+
 ## Fizzbuzz
 
 Classic kata to practice `if` statements.
@@ -18,7 +22,7 @@ Part of the [Javascript30](https://javascript30.com/) challenge. Short exercises
 
 Part of the [Javascript30](https://javascript30.com/) challenge. Exercise to practice with different types of `console`.
 
-## JS30 Hold shift to check multiple checkboxes at the same time. ✅
+## JS30 Hold shift to check multiple checkboxes at the same time ✅
 
 Part of the [Javascript30](https://javascript30.com/) challenge. Quite useful exercise to learn how to work with flags 🚩 and the `shiftKey`event.
 

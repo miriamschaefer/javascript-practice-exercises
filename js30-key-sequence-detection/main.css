@@ -1,5 +1,8 @@
-html {
-  font-family: sans-serif;
+body {
   background: turquoise;
-  color: white;
+}
+
+.title {
+  font-family: 'Montserrat';
+  font-weight: 900;
 }
