@@ -298,3 +298,81 @@ for (const name of incomingAJAXData) {
 }
 
 console.log(transformedData);
+
+// filter done tasks and console the undone ones
+
+let tasks = [
+  { label: 'Eat my lunch', done: true },
+  { label: 'Make the bed', done: false },
+  { label: 'Have some fun', done: false },
+  { label: 'Finish the replits', done: false },
+  { label: 'Replit the finishes', done: true },
+  { label: 'Ask for a raise', done: false },
+  { label: 'Read a book', done: true },
+  { label: 'Make a trip', done: false },
+];
+
+//your code here
+
+let unfinishedTasks = tasks.filter((task) => task.done === true);
+
+console.log(unfinishedTasks);
+
+//filter the list of names that contain the string 'am'
+
+// let names = [
+//   'Liam',
+//   'Emma',
+//   'Noah',
+//   'Olivia',
+//   'William',
+//   'Ava',
+//   'James',
+//   'Isabella',
+//   'Logan',
+//   'Sophia',
+//   'Benjamin',
+//   'Mia',
+//   'Mason',
+//   'Charlotte',
+//   'Elijah',
+//   'Amelia',
+//   'Oliver',
+//   'Evelyn',
+//   'Jacob',
+//   'Abigail',
+//   'Lucas',
+//   'Harper',
+//   'Michael',
+//   'Emily',
+//   'Alexander',
+//   'Elizabeth',
+//   'Ethan',
+//   'Avery',
+//   'Daniel',
+//   'Sofia',
+//   'Matthew',
+//   'Ella',
+//   'Aiden',
+//   'Madison',
+//   'Henry',
+//   'Scarlett',
+//   'Joseph',
+//   'Victoria',
+//   'Jackson',
+//   'Aria',
+//   'Samuel',
+//   'Grace',
+//   'Sebastian',
+//   'Chloe',
+//   'David',
+//   'Camila',
+//   'Carter',
+//   'Penelope',
+//   'Wyatt',
+//   'Riley',
+// ];
+
+// let filterByName = names.includes('am');
+
+// console.log(filterByName);
