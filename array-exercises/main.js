@@ -221,3 +221,80 @@ for (key in contact) {
 }
 
 console.log(contactPerson);
+
+// loop the array of booleans and create a new array that contains the string 'wiki' for every 1 and 'woko' for every 0 that the original array had.
+
+let theBools = [
+  0,
+  1,
+  0,
+  0,
+  1,
+  1,
+  1,
+  0,
+  0,
+  1,
+  0,
+  1,
+  1,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  1,
+  0,
+  0,
+  0,
+  0,
+  1,
+];
+
+//your code here
+function wikiWoko(value) {
+  if (value === 1) {
+    console.log('wiki');
+  } else {
+    console.log('woko');
+  }
+}
+const result = theBools.map(wikiWoko);
+
+// filter names starting with R
+
+let allNames = [
+  'Romario',
+  'Boby',
+  'Roosevelt',
+  'Emiliy',
+  'Michael',
+  'Greta',
+  'Patricia',
+  'Danzalee',
+];
+
+let resultingNames = allNames.filter((name) => name.startsWith('R'));
+
+console.log(resultingNames);
+
+//console log an array with the full names
+
+let incomingAJAXData = [
+  { name: 'Mario', lastName: 'Montes' },
+  { name: 'Joe', lastName: 'Biden' },
+  { name: 'Bill', lastName: 'Clon' },
+  { name: 'Hilary', lastName: 'Mccafee' },
+  { name: 'Bobby', lastName: 'Mc birth' },
+];
+
+let transformedData = [];
+
+for (const name of incomingAJAXData) {
+  transformedData.push(`${name.name} ${name.lastName},`);
+}
+
+console.log(transformedData);

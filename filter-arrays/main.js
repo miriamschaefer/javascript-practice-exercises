@@ -84,3 +84,7 @@ console.log(arrayOfStrings2);
 // };
 
 // console.log(people2.map(simplifier));
+
+function multiply(a, b) {
+  return 'i'.repeat(a).repeat(b).length;
+}
