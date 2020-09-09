@@ -376,3 +376,59 @@ let names = [
 let filterByName = names.filter((name) => name.toLowerCase().includes('am'));
 
 console.log(filterByName);
+
+// Create a function called matrixBuilder, which will expect 1 parameter (an integer). This number represents the amount of rows and columns for the matrix. This function should return an array of arrays that represents the matrix.
+
+function matrixBuilder(int) {
+  const arr1 = [];
+  const arr2 = [];
+
+  for (let j = 0; j < int; j++) {
+    arr1.push(arr2);
+  }
+
+  for (let i = 0; i < int; i++) {
+    arr2.push(Math.round(Math.random()));
+  }
+
+  return arr1;
+}
+
+console.log(matrixBuilder(3));
+
+///////
+
+let allColors = [
+  { label: 'Red', sexy: true },
+  { label: 'Pink', sexy: false },
+  { label: 'Orange', sexy: true },
+  { label: 'Brown', sexy: false },
+  { label: 'Pink', sexy: true },
+  { label: 'Violet', sexy: true },
+  { label: 'Purple', sexy: false },
+];
+
+function generateLI(color) {
+  const html = `<li>${color.label}</li>`;
+
+  return html;
+}
+function filterColors(color) {
+  if (color.sexy === true) {
+    return color.label;
+  }
+}
+
+function generateHTMLFromArray(array) {
+  let filteredOptions = array.filter(filterColors);
+  let LIs = filteredOptions.map(generateLI);
+
+  let htmlString = '<ul>';
+  LIs.forEach(function (elm) {
+    htmlString += elm;
+  });
+  htmlString += '</ul>';
+  return htmlString;
+}
+
+console.log(generateHTMLFromArray(allColors));
